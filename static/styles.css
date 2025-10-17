@@ -1,0 +1,76 @@
+body {
+    text-align: center;
+    background: black;
+    color: lime;           /* text color */
+    font-size: 15px;        /* text size */
+    font-family: Arial, sans-serif;
+    font-weight: bold;      /* bold text */
+    margin: 20px;
+}
+
+button {
+    background-color: lime;
+    color: black;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    color: white;
+    background: linear-gradient(45deg, #ff7e00, #ffb347);
+    box-shadow: 0 0 10px #ff7e00, 0 0 20px #ffb347;
+}
+
+input {
+    background-color: lime;
+    color: black;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+input:hover {
+    color: white;
+    background: linear-gradient(45deg, #ff7e00, #ffb347);
+    box-shadow: 0 0 10px #ff7e00, 0 0 20px #ffb347;
+}
+
+a {
+    color: lime;
+}
+
+a:hover {
+    color: orange;
+}
+
+.gradient-text {
+  font-weight: bold;
+  font-size: 3rem;
+  background: linear-gradient(90deg, #ff8a00, #e52e71);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn-dynamic {
+  background: white;
+  border: 2px solid white;
+  color: black;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-dynamic:hover {
+  color: white;
+  background: linear-gradient(45deg, #ff7e00, #ffb347);
+  box-shadow: 0 0 10px #ff7e00, 0 0 20px #ffb347;
+}
+
+.lead-custom {
+  background: linear-gradient(45deg, #a18cd1, #fbc2eb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 500;
+}
