@@ -50,7 +50,12 @@ def create_room():
 
      # generate QR code
     local_ip = "192.168.1.227"
-    qr_url = f"http://{local_ip}:5000/room/{room_id}"
+
+    if os.environ.get("RENDER"):
+        qr_url = f"https://qr-tranfer-project.onrender.com/room/{room_id}"
+    else:
+        qr_url = f"http://{local_ip}:5000/room/{room_id}"
+
     os.makedirs("static/qrcodes", exist_ok=True)
     qr_path = f"static/qrcodes/{room_id}.png"
     qrcode.make(qr_url).save(qr_path)
