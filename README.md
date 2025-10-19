@@ -35,4 +35,7 @@ To save the memory and enhance security. Every file will be deleted in 10 minute
 - HTML, CSS, JS (Jinja templates)
 - Render (for deployment)
 
+### Challenges Faced:
+During development, I encountered several challenges. One of the biggest issues was how to manage files from different users without mixing them up. At first, I saved all uploaded files in a single folder, which caused confusion and security problems. To solve that, I added the room system where each room has its own folder. Another challenge was testing the website on my phone using the local network. I learned how to find my local IP address and use it in Flask so my phone could connect to the app. Finally, deploying on Render also required some adjustments, such as handling static files correctly and making sure uploaded files were stored temporarily.
+
 #### If you want you can run it locally by clone the repository: https://github.com/AnhTaiLe06/QR-Tranfer_Project. (you need to change the local_ip in the code into your network ip to run locally)
